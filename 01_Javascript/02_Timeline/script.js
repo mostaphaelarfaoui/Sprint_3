@@ -1,4 +1,3 @@
-
 var move = document.querySelectorAll(".timeline li");
 
 
@@ -17,7 +16,5 @@ function call() {
     }
   }
 }
-
-
 document.addEventListener("scroll", call);
 

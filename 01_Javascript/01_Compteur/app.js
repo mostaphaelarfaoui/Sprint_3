@@ -1,27 +1,24 @@
-let add = document.getElementById('indecrease');
-let remove = document.getElementById('decrease');
-let reset = document.getElementById('reset');
-let int = document.getElementById('value');
-let integer = 0;
+let  add     = document.getElementById('indecrease'),
+     remove  = document.getElementById('decrease'),
+     reset   = document.getElementById('reset'),
+     value   = document.getElementById('value'),
+     integer = 0;
 add.addEventListener('click',function(){
     integer +=1;
-    int.innerHTML =integer;
+    value.innerHTML =integer;
     if(integer>=1){
-    int.style.color = 'green';
-}
+    value.style.color = 'green';
+    }   
 })
 remove.addEventListener('click',function(){
     integer -=1 ;
-    int.innerHTML =integer;
+    value.innerHTML =integer;
     if(integer<0){
-        int.style.color = 'red';
+    value.style.color = 'red';
     }
 })
 reset.addEventListener('click',function(){
     integer =0;
-    int.innerHTML =integer;
-    int.style.color = 'black';
-    
-        
-    
+    value.innerHTML =integer;
+    value.style.color = 'black';
 })
